@@ -17,3 +17,6 @@ app.listen(port, () => {
 app.get("/elizabeth", (req, res) => {
   res.send("cats");
 });
+body {
+  background-color: lightblue;
+}
