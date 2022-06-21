@@ -1,0 +1,23 @@
+{
+  "name": "my-pantry",
+  "version": "1.0.0",
+  "description": "My Pantry App",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notken12/my-pantry.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notken12/my-pantry/issues"
+  },
+  "homepage": "https://github.com/notken12/my-pantry#readme",
+  "dependencies": {
+    "vite": "^2.9.12"
+  }
+}
