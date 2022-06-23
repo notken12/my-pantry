@@ -31,3 +31,7 @@ app.get("/elizabeth", (req, res) => {
 app.get("/elizabeth", (req, res) => {
   res.send("test");
 });
+
+app.get("/elizabeth", (req, res) => {
+  res.send("cats");
+});
