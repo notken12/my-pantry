@@ -28,7 +28,8 @@ app.get("/elizabeth", (req, res) => {
   res.send("nooo");
 });
 
-app.get("/elizabeth", (req, res) => {
-  res.send("yaa");
+app.get("/index.html", (req, res) => {
+  res.sendFile("./index.html");
 });
+
   
