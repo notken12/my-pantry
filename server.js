@@ -13,3 +13,7 @@ app.get("/mypantry", (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+app.get("/Seungwoo", (req, res) => {
+  res.send("Seungwoo");
+});
