@@ -28,7 +28,7 @@ app.get("/raymond", (req, res) => {
 app.get("/elizabeth", (req, res) => {
   res.send("catsss");
 });
-  
+
 <style>
-  body {background-color: powderblue;}
+body background-color: powderblue;
 </style>
