@@ -25,5 +25,5 @@ app.get("/raymond", (req, res) => {
 });
 
 app.get("/elizabeth", (req, res) => {
-  res.send("ok test");
+  res.send("ok");
 });
