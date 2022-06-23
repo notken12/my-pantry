@@ -26,6 +26,21 @@ app.get("/pantries/:id", async (req, res) => {
   res.json(pantry);
 });
 
+const User = mongoose.model("User", {
+  name: String,
+});
+
+app.get("/", (req, res) => {
+  res.send(message);
+});
+
+app.get("/user/:id", async (req, res) => {
+  const id = req.params.id;
+  const user = await User.findById(id);
+  res.json(user);
+});
+
+
 app.get("/mypantry", (req, res) => {
   res.send("My pantry");
 });
