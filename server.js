@@ -28,10 +28,6 @@ app.get("/elizabeth", (req, res) => {
   res.send("ok");
 });
 
-app.get("/elizabeth", (req, res) => {
+app.get("/liz", (req, res) => {
   res.send("test");
-});
-
-app.get("/elizabeth", (req, res) => {
-  res.send("cats");
 });
