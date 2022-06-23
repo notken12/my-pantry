@@ -25,8 +25,7 @@ app.get("/raymond", (req, res) => {
 });
 
 
-app.get("/index.html", (req, res) => {
-  res.sendFile("./index.html");
-});
-
+app.get("/elizabeth"), (req, res) => {
+  res.sendFile("catsss");
+}
   
