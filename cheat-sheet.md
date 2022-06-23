@@ -14,6 +14,12 @@ Once you're done and happy with your code, commit the changes into GitHub.
 
 ### In the backend
 
+In the terminal:
+
+```
+node backend-server.js
+```
+
 Seungwoo, Ken
 
 Express servers have multiple routes: GET /, GET /cheat-sheet, POST /pantry, etc.
@@ -26,6 +32,18 @@ We'll be using MongoDB ![https://www.mongodb.com/] as the database. We won't nee
 we'll just use this.
 
 ### In the frontend
+
+In the terminal:
+
+```
+npm run start
+```
+
+(Same thing as)
+
+```
+npx vite
+```
 
 Elizabeth, Raymond
 
