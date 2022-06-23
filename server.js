@@ -3,13 +3,7 @@ const app = new express();
 const port = 8000;
 
 app.get("/", (req, res) => {
-  res.send("coding is so hard");
-});
-
-app.get("/cheatsheet", (req, res) => {
-  let path = __dirname + "/cheat-sheet.md";
-  console.log(path);
-  res.sendFile(path);
+  res.send("Hello world!");
 });
 
 app.get("/mypantry", (req, res) => {
@@ -25,13 +19,5 @@ app.get("/raymond", (req, res) => {
 });
 
 app.get("/elizabeth", (req, res) => {
-  res.send("ok");
-});
-
-app.get("/elizabeth", (req, res) => {
-  res.send("ok");
-});
-
-app.get("/elizabeth", (req, res) => {
-  res.send("hello");
+  res.send("cats");
 });
