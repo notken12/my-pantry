@@ -3,7 +3,7 @@ const app = new express();
 const port = 8000;
 
 app.get("/", (req, res) => {
-  res.send("Hello world!");
+  res.send("coding is so hard");
 });
 
 app.get("/cheatsheet", (req, res) => {
@@ -24,11 +24,3 @@ app.get("/raymond", (req, res) => {
   res.send("Raymond");
 });
 
-
-app.get("/elizabeth", (req, res) => {
-  res.send("catsss");
-});
-
-<style>
-body background-color: powderblue;
-</style>
