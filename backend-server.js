@@ -5,10 +5,25 @@ const express = require("express");
 const app = new express();
 const port = 8000;
 
+const connectionString = process.env.MONGO_CONNECTION_STRING;
+
+const mongoose = require("mongoose");
+mongoose.connect(connectionString);
+
+const Pantry = mongoose.model("Pantry", {
+  name: String,
+});
+
 const message = process.env.TESTMESSAGE;
 
 app.get("/", (req, res) => {
   res.send(message);
+});
+
+app.get("/pantries/:id", async (req, res) => {
+  const id = req.params.id;
+  const pantry = await Pantry.findById(id);
+  res.json(pantry);
 });
 
 app.get("/mypantry", (req, res) => {
