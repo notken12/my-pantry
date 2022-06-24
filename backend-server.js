@@ -1,9 +1,14 @@
+const dotenv = require("dotenv");
+dotenv.config();
+
 const express = require("express");
 const app = new express();
 const port = 8000;
 
+const message = process.env.TESTMESSAGE;
+
 app.get("/", (req, res) => {
-  res.send("Hello world!");
+  res.send(message);
 });
 
 app.get("/mypantry", (req, res) => {
