@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyPantry</title>
-  </head>
-  <body>
 
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyPantry!</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the header */
+    header {
+      background-color: rgb(91, 119, 204);
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px; /* only for demonstration, should be removed */
+      background: rgb(208, 179, 236);
+      padding: 20px;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 20px;
+      width: 70%;
+    }
+    
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f6ebbf;
+      height: 300px; /* only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: rgb(91, 119, 204);
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    
+    
+    <header>
+      <h2>Welcome To MyPantry!</h2>
+    </header>
+    <style>
+      h2 {
+        font-family: tahoma;
+      }
+    </style>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Customization</a></li>
+        </ul>
+      </nav>
+      <style>
+      </style>
+      
+      <article>
+        <h1>About us</h1>
+        <p>Inspired by the pantry that stores and distributes necessities in our school to support low-income families, the MyPantry app informs users of what goods are available in pantries.</p>
+        <p>The app helps pantry owners better provide for their communities by doing the bookkeeping for them and supporting communities’ publication of pantry information. Pantries can be shared via links.
+        </p>
+      </article>
+      <style>
+        p {
+          font-family:Trebuchet MS;
+          font-size: 18px;
+        }
+      </style>
+
+    </section>
+    
+    <footer>
+      <p>For more information, contact: </p>
+    </footer>
+    
+    </body>
+    </html>
+    
+  
